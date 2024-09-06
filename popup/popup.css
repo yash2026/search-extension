@@ -37,6 +37,10 @@ input[type="number"] {
   font-size: 1rem;
 }
 
+input[type="number"].invalid {
+  border: 2px solid red;
+}
+
 button {
   padding: 12px 20px;
   background-color: #007bff;
@@ -47,12 +51,11 @@ button {
   font-size: 1rem;
 }
 
-button:hover {
-  background-color: #0056b3;
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
-p#countdown {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #007bff;
+button:hover:not(:disabled) {
+  background-color: #0056b3;
 }

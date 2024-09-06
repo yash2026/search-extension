@@ -3,7 +3,7 @@
   "name": "Random Search Extension",
   "version": "1.0",
   "description": "Perform random searches with a delay in a single tab.",
-  "permissions": ["activeTab", "tabs", "scripting", "storage"],
+  "permissions": ["activeTab", "tabs", "scripting", "storage", "webNavigation"],
   "background": {
     "service_worker": "background.js"
   },
